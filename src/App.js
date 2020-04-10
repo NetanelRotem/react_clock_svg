@@ -1,11 +1,13 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
-import Clock from "./Clock";
+import RunDev from "./RunDev";
 function App() {
+  const [animate, setAnimate] = useState(false);
   return (
     <div className="App">
-      <Clock />
+      <h2>svg animation</h2>
+      <button onClick={() => setAnimate(!animate)}>Animate</button>
+      <RunDev animate={animate} />
     </div>
   );
 }
