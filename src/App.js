@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-import Line from "./lineChart/Line";
-
+import PieChart from "./pieChart/PieChart";
 function App() {
   return (
     <div className="App">
-      <h2>Line Chart</h2>
-      <Line />
+      <h2>Pie Chart</h2>
+      <PieChart />
     </div>
   );
 }
