@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import RunDev from "./RunDev";
+import Line from "./lineChart/Line";
+
 function App() {
-  const [animate, setAnimate] = useState(false);
   return (
     <div className="App">
-      <h2>svg animation</h2>
-      <button onClick={() => setAnimate(!animate)}>Animate</button>
-      <RunDev animate={animate} />
+      <h2>Line Chart</h2>
+      <Line />
     </div>
   );
 }
