@@ -21,7 +21,6 @@ export default [
   },
   {
     value: 77,
-    label: "cscode",
-    color: "grey",
+    label: "Vscode",
   },
 ];
